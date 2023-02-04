@@ -29,9 +29,9 @@ app.get("/",(req,res) => {
   console.log("server is connected !");
 })
 
-const userRoutes=require("./api/user/routes/user");
-const issueRoutes=require("./api/issues/routes/issues")
-const commentRoutes=require("./api/comments/routes/comments");
+const userRoutes=require("./user/routes/user");
+const issueRoutes=require("./issues/routes/issues")
+const commentRoutes=require("./comments/routes/comments");
 
 app.use("/api/user",userRoutes);
 app.use("/api/issue",issueRoutes);
